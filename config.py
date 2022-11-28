@@ -25,5 +25,4 @@ TOKENIZER = tokenizers.BertWordPieceTokenizer(
         lowercase=True
     )
 
-#print(4)
 
