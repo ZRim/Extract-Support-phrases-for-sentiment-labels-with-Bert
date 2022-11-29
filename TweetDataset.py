@@ -33,7 +33,7 @@ class TweetDataset:
         PREPROCESSING DATA (WHAT WE NEED TO TRAIN OUR MODEL):
 
         We are required to:
-        - dd special tokens to the start and end of each sentence.
+        - Add special tokens to the start and end of each sentence.
         - Pad & truncate all sentences to a single constant length.
         - Explicitly differentiate real tokens from padding tokens with the “attention mask”.
         BERT has two constraints:
@@ -103,8 +103,7 @@ class TweetDataset:
                 'orig_sentiment': self.sentiment[idx]
                 }
 
-        #The biggest difference between a numpy array and a PyTorch Tensor is that a PyTorch Tensor can 
-        #run on either CPU or GPU. To run operations on the GPU, just cast the Tensor to a cuda datatype.
+        # PyTorch Tensor can run on either CPU or GPU. To run operations on the GPU, just cast the Tensor to a cuda datatype.
 
 
 
