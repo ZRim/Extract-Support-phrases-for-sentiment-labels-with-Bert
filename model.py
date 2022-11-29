@@ -25,7 +25,7 @@ class BertModel(nn.Module):
         
         return start_logits, end_logits
 
-#I noticed here that I need two outputs for the linear layer l2. In tha case of a simple 
+#Here, we need two outputs for the linear layer l2. In the case of a simple 
 #classification model, the number of outputs is the number of output classes. In our case,
 #the output is sub-text of the input text (or tweet). So, we need two outputs which are 
 #two vectors of the same length of the input text and, : the first is 
